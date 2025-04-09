@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strata Management Portal</title>
+    <style>
+        .scroll-container {
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+        .scroll-content {
+          display: inline-block;
+          animation: scroll 20s linear infinite;
+        }
+        .scroll-content img {
+          height: 200px;
+          margin-right: 10px;
+        }
+        @keyframes scroll {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-100%); }
+        }
+      </style>
+</head>
+<body>
+
+    <!-- 主页 -->
+    <section id="home" class="container">
+        <h1>Welcome to Strata About</h1>
+        <p>Manage your building's introduction,</p>
+        <img src="building.jpg" alt="Apartment Building" width="100%">
+    </section>
+
+
+    <body>
+    <div class="scroll-container">
+      <div class="scroll-content">
+        <img src="image1.jpg" alt="图片1">
+        <img src="image2.jpg" alt="图片2">
+        <img src="image3.jpg" alt="图片3">
+        <!-- 重复图片以实现无缝滚动 -->
+        <img src="image1.jpg" alt="图片1">
+        <img src="image2.jpg" alt="图片2">
+        <img src="image3.jpg" alt="图片3">
+      </div>
+      <a href="./index.html">
+        <button>返回首页</button>
+      </a>
+    </div>
+    </body>
+    </html>
+
+
+
+</body>
+</html>

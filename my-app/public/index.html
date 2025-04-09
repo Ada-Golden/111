@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strata Management Portal</title>
+    <style>
+        /* 基础CSS样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        nav {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        form {
+            background: #f4f4f4;
+            padding: 2rem;
+            border-radius: 5px;
+        }
+        input, textarea {
+            display: block;
+            margin: 1rem 0;
+            width: 100%;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#payments">Payments</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主页 -->
+    <section id="home" class="container">
+        <h1>Welcome to Strata Manager</h1>
+        <p>Manage your building's administration fund, maintenance requests, and committee communications.</p>
+        <img src="building.jpg" alt="Apartment Building" width="100%">
+    </section>
+
+    <!-- 联系表单 -->
+    <section id="contact" class="container">
+        <h2>Submit Maintenance Request</h2>
+        <form id="requestForm" onsubmit="handleSubmit(event)">
+            <input type="text" placeholder="Unit Number" required>
+            <textarea placeholder="Request Details" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+   <!--   支付页面 
+    <section id="payments" class="container">
+        <h2>Levy Payments</h2>
+        <div class="payment-options">
+            <button onclick="showBankDetails()">Bank Transfer</button>
+            <button onclick="showCreditCard()">Credit Card</button>
+            <div id="paymentDetails"></div>
+        </div>
+    </section>
+
+   <script>
+        // 基础JavaScript功能
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert('Request submitted! We will respond within 24 hours.');
+            document.getElementById('requestForm').reset();
+        }
+
+        function showBankDetails() {
+            document.getElementById('paymentDetails').innerHTML = `
+                <h3>Bank Details</h3>
+                <p>BSB: 012-345<br>
+                Account: 12345678<br>
+                Reference: Your Unit Number</p>`;
+        }
+
+        function showCreditCard() {
+            document.getElementById('paymentDetails').innerHTML = `
+                <h3>Credit Card Payment</h3>
+                <input type="number" placeholder="Card Number">
+                <input type="text" placeholder="Expiry Date">`;
+        }
+
+        加专利的结尾，可以查chatgpt 
+   
+    </script> -->
+</body>
+
+
+
+
+</html>
